@@ -27,7 +27,7 @@ pyzbar==0.1.9
 
 ## Data location
 Trained models for object detection "yolov8.pt" and action recognition "action_recog.pth" are available on the [online drive](https://drive.google.com/drive/folders/1D28ZecMWVpTYIKpmXMsLwcFxfFQGq56r?usp=sharing).  
-Codes and data structure is following. Please locate the downloaded models in "./weithgts/detection" and "./weights/action".  
+Codes and data structure is following. Please prepare "./weights" directory and locate the downloaded models in "./weithgts/detection" and "./weights/action".
 In the current version sample videos should be in root directory "./". Sample images for barcode recognition are in ./sample_barcode.
 
 ```commandline
