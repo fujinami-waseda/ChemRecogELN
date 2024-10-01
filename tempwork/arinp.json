@@ -1,0 +1,1 @@
+{"labels": ["AddingReagent", "Stirring", "Transferring"], "database": {"fig6b": {"subset": "validation", "annotations": {"label": "AddingReagent", "segment": [1, 320]}}}}
