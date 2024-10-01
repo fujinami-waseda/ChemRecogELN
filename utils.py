@@ -436,8 +436,6 @@ def ActionRecognition(video_path):
     with dst_json_path.open('w') as dst_file:
         json.dump(dst_data, dst_file)
         
-    #subprocess.run("python ./3D-ResNets-PyTorch-master/main.py --root_path ./3D-ResNets-PyTorch-master/data --video_path ../../tempwork/videojpg --annotation_path ../../tempwork/arinp.json --result_path ../../tempwork/arresult --dataset ucf101 --resume_path ../../save_3218.pth --model_depth 34 --n_classes 3 --n_threads 4 --no_train --no_val --inference --output_topk 1 --inference_batch_size 1 --no_cuda", shell=True)
-    #subprocess.run("python ./3D-ResNets-PyTorch-master/main.py --root_path ./3D-ResNets-PyTorch-master/data --video_path ../../tempwork/videojpg --annotation_path ../../tempwork/arinp.json --result_path ../../tempwork/arresult --dataset ucf101 --resume_path ../../weights/action/save_3218.pth  --model_depth 34 --n_classes 3 --n_threads 4 --no_train --no_val --inference --output_topk 3 --inference_batch_size 1 --no_cuda", shell=True)
     subprocess.run("python ./3D-ResNets-PyTorch-master/main.py --root_path ./3D-ResNets-PyTorch-master/data --video_path ../../tempwork/videojpg --annotation_path ../../tempwork/arinp.json --result_path ../../tempwork/arresult --dataset ucf101 --resume_path ../../weights/action/action_recog.pth  --model_depth 34 --n_classes 3 --n_threads 4 --no_train --no_val --inference --output_topk 3 --inference_batch_size 1 --no_cuda", shell=True)
     
     json_path = "./tempwork/arresult/val.json"
