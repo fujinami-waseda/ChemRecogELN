@@ -274,7 +274,7 @@ def Flowcharting2_genchart(csv_path, video_path):
         width = max(width, len(base[i]))
 
     #Flowcharting
-    fon='./times.ttf'
+    fon='./tempwork/times.ttf'
     fp=FontProperties(fname=fon)
 
     # definition if the range of the axis
@@ -527,7 +527,7 @@ def Barcode():
 
                 # Mark barcode area
                 draw = ImageDraw.Draw(uploaded_image)
-                font = ImageFont.truetype('./times.ttf', size=20)  # Set 'arial.ttf' for Windows
+                font = ImageFont.truetype('./tempwork/times.ttf', size=20)  # Set 'arial.ttf' for Windows
 
                 for d in decode(uploaded_image):
                     draw.rectangle(((d.rect.left, d.rect.top), (d.rect.left + d.rect.width, d.rect.top + d.rect.height)),
